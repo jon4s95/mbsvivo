@@ -125,7 +125,7 @@ nohup pkg install pv -y -qq --silent
 nohup pkg install jq -y -qq --silent
 nohup pkg install git -y -qq --silent
 ###################
-nohup curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/mbsfree1 > /dev/null && chmod 777 mbsfree1
+nohup curl -sO https://raw.githubusercontent.com/jon4s95/mbsvivo/main/padrao > /dev/null && chmod 777 mbsfree1
 nohup curl -sO https://raw.githubusercontent.com/jon4s95/mbsvivo/main/personalizado > /dev/null && chmod 777 mbsfree2
 nohup curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/ganharcreditos > /dev/null && chmod 777 ganharcreditos
 nohup curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/ospacotesmb > /dev/null && chmod 777 ospacotesmb
