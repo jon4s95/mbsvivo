@@ -192,7 +192,7 @@ body=$(echo $response | jq '.packprovision')
                                 for o in $(seq $qtdtokens);
                                    do
                                 VEZES=9999
-                                tokens1=("sed '"$o"p; d'")
+                                tokens1=("sed '"$o"p; d'") 
                                 tokens2=$(echo "$tokens" | eval $tokens1)
                                        echo -e "\e[07;01;37;40m   T O K E N \e[01;36;40m $o \e[0m"
                                        echo -e "\e[01;32m TOKEN \e[01;37m: \e[0m\e[01;04;37m$tokens2\e[0m"
