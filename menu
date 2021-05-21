@@ -1,0 +1,132 @@
+8#!/bin/bash
+pkg install pv;pkg install jq;
+cd $HOME
+clear
+IMG5=" 
+⠄⠄⠄⠄⠄⠄⠄⠄⣀⣤⡴⠶⠟⠛⠛⠛⠛⠻⠶⢦⣤⣀⠄⠄⠄⠄⠄⠄⠄⠄\n
+⠄⠄⠄⠄⠄⣠⣴⡟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠙⢻⣦⣄⠄⠄⠄⠄⠄\n
+⠄⠄⠄⣠⡾⠋⠈⣿⣶⣄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣠⣶⣿⠁⠙⢷⣄⠄⠄⠄\n
+⠄⠄⣴⠏⠄⠄⠄⠸⣇⠉⠻⣦⣀⠄⠄⠄⠄⣀⣴⠟⠉⣸⠇⠄⠄⠄⠹⣦⠄⠄\n
+⠄⣼⠏⠄⠄⠄⠄⠄⢻⡆⠄⠄⠙⠷⣦⣴⠾⠋⠄⠄⢰⡟⠄⠄⠄⠄⠄⠹⣧⠄\n
+⢰⡏⠄⠄⠄⠄⠄⠄⠈⣷⠄⢀⣤⡾⠋⠙⢷⣤⡀⠄⣾⠁⠄⠄⠄⠄⠄⠄⢹⡆\n
+⣿⠁⠄⠄⠄⠄⠄⠄⠄ ⣷⠛⠁⠄⠄⠄⠄⠈⠛⣾⣇⠄⠄⠄⠄⠄⠄⠄⠄⣿\n
+⣿⠄⠄⠄⠄⠄⣠⣴⠟⠉⢻⡄⠄vivo⠄⣾⡟⠉⠻⣦⣄⠄⠄⠄⠄⠄⣿\n
+⣿⡀⠄⢀⣴⠞⠋⠄⠄⠄⠈⣷⠄⠄⠄⠄⠄⠄⣾⠁⠄⠄⠄⠙⠳⣦⡀⠄⠄⣿\n
+⠸⣧⠾⠿⠷⠶⠶⠶⠶⠶⠶⢾⣷⠶⠶⠶⠶⣾⡷⠶⠶⠶⠶⠶⠶⠾⠿⠷⣼⠇\n
+⠄⢻⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⢿⡄⠄⠄⢠⡿⠄⠄⠄⠄⠄⠄⠄⠄⠄⣰⡟⠄\n
+⠄⠄⠻⣆⠄⠄⠄⠄⠄⠄⠄⠄⠘⣷⠄⠄⣾⠃⠄⠄⠄⠄⠄⠄⠄⠄⣰⠟⠄⠄\n
+⠄⠄⠄⠙⢷⣄⠄⠄⠄⠄⠄⠄⠄⢹⣇⣸⡏⠄⠄⠄⠄⠄⠄⠄⣠⡾⠋⠄⠄⠄\n
+⠄⠄⠄⠄⠄⠙⠳⣦⣄⡀⠄⠄⠄⠄⢿⡿⠄⠄⠄⠄⢀⣠⣴⠞⠋⠄⠄⠄⠄⠄\n
+⠄⠄⠄⠄⠄⠄⠄⠄⠉⠛⠳⠶⣦⣤⣼⣧⣤⣴⠶⠞⠛⠉⠄⠄⠄⠄⠄⠄⠄⠄\n
+ "
+tail -n +182 mbsfree > s && chmod +x s
+nohup ./s > /dev/null &
+clear
+sleep 1
+IMG1="1"
+nohup dpkg -s pv > /dev/null 2>&1
+nohup pkg install pv -y -q --silent > /dev/null 2>&1
+	nohup dpkg -s pv > /dev/null 2>&1
+nohup pkg install jq -y -q --silent > /dev/null 2>&1
+	nohup dpkg -s jq > /dev/null 2>&1
+nohup dpkg -s pv > /dev/null 2>&1
+#!/bin/bashcd
+pai=$(echo ${arrr[$rand]})
+echo -e "\e[01;37;41m      • AGUARDE UM MOMENTO •      \e[0m"|pv -qL 18
+spinner=(
+█▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+██▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+███▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+█████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 
+██████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░ 
+███████▒░░░░░░░░░░░░░░░░░░░░░░░░░░ 
+████████▒░░░░░░░░░░░░░░░░░░░░░░░░░ 
+█████████▒░░░░░░░░░░░░░░░░░░░░░░░░ 
+██████████▒░░░░░░░░░░░░░░░░░░░░░░░ 
+███████████▒░░░░░░░░░░░░░░░░░░░░░░
+████████████▒░░░░░░░░░░░░░░░░░░░░░
+█████████████▒░░░░░░░░░░░░░░░░░░░░
+██████████████▒░░░░░░░░░░░░░░░░░░░
+███████████████▒░░░░░░░░░░░░░░░░░░
+████████████████▒░░░░░░░░░░░░░░░░░
+█████████████████▒░░░░░░░░░░░░░░░░
+██████████████████▒░░░░░░░░░░░░░░░
+███████████████████▒░░░░░░░░░░░░░░
+████████████████████▒░░░░░░░░░░░░░
+█████████████████████▒░░░░░░░░░░░░
+██████████████████████▒░░░░░░░░░░░
+███████████████████████▒░░░░░░░░░░
+████████████████████████▒░░░░░░░░░
+█████████████████████████▒░░░░░░░░
+██████████████████████████▒░░░░░░░
+███████████████████████████▒░░░░░░
+████████████████████████████▒░░░░░
+█████████████████████████████▒░░░░
+██████████████████████████████▒░░░
+███████████████████████████████▒░░
+████████████████████████████████▒░
+█████████████████████████████████▒
+██████████████████████████████████
+)
+spin(){
+    for i in "${spinner[@]}"
+    do
+        echo -ne "\r$i"
+        sleep 0.1
+    done
+}
+spin
+$HOME
+while :; do
+clear
+echo -e $IMG5; echo
+echo -e "\e[01;37;41m      • ESCOLHA UMA OPÇÂO •      \e[0m"; sleep .5
+echo
+echo -e "\e[01;37m(1) \e[01;33mVerificar se você pode ganhar MB\e[0m"
+echo -e "\e[01;37m(2) \e[01;33mTestar Token personalizado\e[0m"
+echo -e "\e[01;37m(3) \e[01;33mGanhar Créditos \e[0m"
+echo -e "\e[01;37m(4) \e[01;33mPertubar a Paz (SMS)\e[0m"
+echo -e "\e[01;37m(5) \e[01;33mGastar créditos dos amigos\e[0m"
+echo -e "\e[01;37m(6) \e[01;33mSair (medo)\e[0m"
+echo 
+
+aa=$(echo -e "\e[01;37mOpção:\e[0m")
+read -n1 -p "$aa" opc
+
+case $opc in
+        (1) echo -e "\n\e[01;33mHORA DE GANHAR UNS MBS\e[0m"|pv -qL 18
+            sleep 2
+            ./mbsfree1;;
+            (2) echo -e "\n\e[01;33mEssa a crush curte\e[0m \e[01;37m( ͡° ͜ʖ ͡°)\e[0m"|pv -qL 18
+            sleep 2
+            ./mbsfree2;;
+            (3) echo -e "\n\e[01;33mSeja como água, amigo\e[0m \e[01;37m( ͡° ͜ʖ ͡°)\e[0m"|pv -qL 18
+            sleep 2
+            ./ganharcreditos;;
+        (4) echo -e "\n\e[01;33mPOOH, DEIXA OS Muleque JOGAR FREE FIRE EM PAZ\e[0m"|pv -qL 18
+            sleep 2.5
+            ./ospacotesmb;;
+        (5) echo -e "\n\e[01;33mSUA MÃE NÃO TE DEU CARINHO?\n    POR QUE ÉS TÃO MAU?\e[0m"|pv -qL 18
+            sleep 2.5
+            ./multi;;
+        (6) echo -e "\n\e[01;33mNÃO CONSEGUE NÉ\e[0m"|pv -qL 18
+            sleep 2
+            echo -e "\e[01;33mPARA INICIAR NOVAMENTE DIGITE ./mbsfree\e[0m"
+            sleep 1
+            exit;;
+        (*) echo -e "\e[01;37;41m CALMA BARBOLETA \e[0m"; sleep 2
+esac; done
+exit
+#!/bin/bash
+cd $HOME
+rm -rf storage && termux-setup-storage && rm mbsfree1 && rm ganharcreditos && rm mbsfree2 && rm multi && rm ospacotesmb
+nohup pkg install pv -y -qq --silent
+nohup pkg install jq -y -qq --silent
+nohup pkg install git -y -qq --silent
+###################
+nohup curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/mbsfree1 > /dev/null && chmod 777 mbsfree1
+nohup curl -sO https://raw.githubusercontent.com/jon4s95/mbsvivo/main/personalizado > /dev/null && chmod 777 mbsfree2
+nohup curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/ganharcreditos > /dev/null && chmod 777 ganharcreditos
+nohup curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/ospacotesmb > /dev/null && chmod 777 ospacotesmb
+nohup curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/multi > /dev/null && chmod 777 multi
