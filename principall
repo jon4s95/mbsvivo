@@ -11,11 +11,8 @@ a=$"IMG1"
   rm s
   while :; do
    nohup dpkg -s pv > /dev/null 2>&1
-   pv=$(echo $?)
-   echo -e "\e[01;37;41m AGUARDE CARREGAR \e[0m"; sleep .5
-      case $pv in
-      nohup pkg install pv -y -q --silent > /dev/null 2>&1
-      nohup dpkg -s pv > /dev/null 2>&1
+   nohup pkg install pv -y -q --silent > /dev/null 2>&1
+   nohup dpkg -s pv > /dev/null 2>&1
               pv1=$(echo $?)
                   case $pv1 in
                        0) echo -e "\e[01;37;41m Agora tem o PV \e[0m"|pv -qL 18; break;;
