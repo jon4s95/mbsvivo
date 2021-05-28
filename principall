@@ -6,16 +6,16 @@ cd $HOME; clear
   IMG1="
 ⠄⠄⠄⠄⠄⠄⠄⠄⣀⣤⡴⠶⠟⠛⠛⠛⠛⠻⠶⢦⣤⣀⠄⠄⠄⠄⠄⠄⠄⠄\n⠄⠄⠄⠄⠄⣠⣴⡟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠙⢻⣦⣄⠄⠄⠄⠄⠄\n⠄⠄⠄⣠⡾⠋⠈⣿⣶⣄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣠⣶⣿⠁⠙⢷⣄⠄⠄⠄\n⠄⠄⣴⠏⠄⠄⠄⠸⣇⠉⠻⣦⣀⠄⠄⠄⠄⣀⣴⠟⠉⣸⠇⠄⠄⠄⠹⣦⠄⠄\n⠄⣼⠏⠄⠄⠄⠄⠄⢻⡆⠄⠄⠙⠷⣦⣴⠾⠋⠄⠄⢰⡟⠄⠄⠄⠄⠄⠹⣧⠄\n⢰⡏⠄⠄⠄⠄⠄⠄⠈⣷⠄⢀⣤⡾⠋⠙⢷⣤⡀⠄⣾⠁⠄⠄⠄⠄⠄⠄⢹⡆\n⣿⠁⠄⠄⠄⠄⠄⠄⠄ ⣷⠛⠁⠄⠄⠄⠄⠈⠛⣾⣇⠄⠄⠄⠄⠄⠄⠄⠄⣿\n⣿⠄⠄⠄⠄⠄⣠⣴⠟⠉⢻⡄⠄vivo⠄⣾⡟⠉⠻⣦⣄⠄⠄⠄⠄⠄⣿\n⣿⡀⠄⢀⣴⠞⠋⠄⠄⠄⠈⣷⠄⠄⠄⠄⠄⠄⣾⠁⠄⠄⠄⠙⠳⣦⡀⠄⠄⣿\n⠸⣧⠾⠿⠷⠶⠶⠶⠶⠶⠶⢾⣷⠶⠶⠶⠶⣾⡷⠶⠶⠶⠶⠶⠶⠾⠿⠷⣼⠇\n⠄⢻⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⢿⡄⠄⠄⢠⡿⠄⠄⠄⠄⠄⠄⠄⠄⠄⣰⡟⠄\n⠄⠄⠻⣆⠄⠄⠄⠄⠄⠄⠄⠄⠘⣷⠄⠄⣾⠃⠄⠄⠄⠄⠄⠄⠄⠄⣰⠟⠄⠄\n⠄⠄⠄⠙⢷⣄⠄⠄⠄⠄⠄⠄⠄⢹⣇⣸⡏⠄⠄⠄⠄⠄⠄⠄⣠⡾⠋⠄⠄⠄\n⠄⠄⠄⠄⠄⠙⠳⣦⣄⡀⠄⠄⠄⠄⢿⡿⠄⠄⠄⠄⢀⣠⣴⠞⠋⠄⠄⠄⠄⠄\n⠄⠄⠄⠄⠄⠄⠄⠄⠉⠛⠳⠶⣦⣤⣼⣧⣤⣴⠶⠞⠛⠉⠄⠄⠄⠄⠄⠄⠄⠄\n"
 a=$"IMG1"
+  echo -e $IMG1; echo
              echo; echo -e "\e[01;37;41m  • ATUALIZANDO •  \e[0m\c"; echo -e " \e[01;02;37mPode demorar um pouco\e[0m"; sleep .5
   rm s
-  echo -e $IMG1; echo
   while :; do
    nohup dpkg -s pv > /dev/null 2>&1
    pv=$(echo $?)
    echo -e "\e[01;37;41m AGUARDE CARREGAR \e[0m"; sleep .5
       case $pv in
-             nohup pkg install pv -y -q --silent > /dev/null 2>&1
-             nohup dpkg -s pv > /dev/null 2>&1
+      nohup pkg install pv -y -q --silent > /dev/null 2>&1
+      nohup dpkg -s pv > /dev/null 2>&1
               pv1=$(echo $?)
                   case $pv1 in
                        0) echo -e "\e[01;37;41m Agora tem o PV \e[0m"|pv -qL 18; break;;
