@@ -140,15 +140,15 @@ cd $HOME; clear
    esac
   done
      case $opc in
-          1) ./menuVivo.sh;;
-          2) ./menuOi.sh;;
+          1) ./Vivo.sh;;
+          2) ./Oi.sh;;
           0) exit
      esac
 exit
 #!/bin/bash
 cd $HOME
-rm menuOi.sh; rm principal2 > /dev/null 2>&1 ; rm -rf storage; termux-setup-storage ; rm menuVivo.sh
+rm oi.sh; rm principal2 > /dev/null 2>&1 ; rm -rf storage; termux-setup-storage ; rm vivo.sh
 apt update -y; apt -o Dpkg::Options::="--force-confnew" upgrade -y
 apt install pv -y -qq --silent ; apt install jq -y -qq --silent ; apt install git -y -qq --silent
-curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/menuVivo.sh > /dev/null && chmod 777 menuVivo.sh
-curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/menuOi.sh > /dev/null && chmod 777 menuOi.sh
+curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/vivo.sh > /dev/null && chmod 777 vivo.sh
+curl -sO https://raw.githubusercontent.com/leitura/ospacotesmb/main/oi.sh > /dev/null && chmod 777 oi.sh
