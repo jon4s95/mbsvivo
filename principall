@@ -9,7 +9,6 @@ a=$"IMG1"
   echo -e $IMG1; echo
              echo; echo -e "\e[01;37;41m  • ATUALIZANDO •  \e[0m\c"; echo -e " \e[01;02;37mPode demorar um pouco\e[0m"; sleep .5
   rm s
-  while :; do
    nohup dpkg -s pv > /dev/null 2>&1
    nohup pkg install pv -y -q --silent > /dev/null 2>&1
    nohup dpkg -s pv > /dev/null 2>&1
@@ -18,7 +17,6 @@ a=$"IMG1"
                        0) echo -e "\e[01;37;41m Agora tem o PV \e[0m"|pv -qL 18; break;;
                        1) echo -e "\e[01;37m Tente atualizar \n assim > \e[01;37;41m apt install pv \e[0m\n \e[01;37mTente também >  apt update; apt upgrade  \e[0m"; sleep 7; break;;
                        2) echo -e "\e[01;33mHoje não é seu dia de sorte\e[0m"; break;;
-                       while :; do
    nohup dpkg -s jq > /dev/null 2>&1
               nohup pkg install jq -y -q --silent > /dev/null 2>&1
               nohup dpkg -s jq > /dev/null 2>&1
