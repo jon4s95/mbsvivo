@@ -16,7 +16,7 @@ cd $HOME; clear
            0) echo -e "\e[01;37m Boa, você tem o PV \e[0m"|pv -qL 20; break;;
            1) echo -e "\e[01;33m Sem PV\e[0m"; sleep 1
               echo -e "\e[01;33m Sem pressa, irmão \e[0m\c"; sleep 1; echo; echo
-              nohup pkg install pv -y -q --silent > /dev/null 2>&1
+              nohup dpkg install pv -y -q --silent > /dev/null 2>&1
               nohup dpkg -s pv > /dev/null 2>&1
               pv1=$(echo $?)
                   case $pv1 in
