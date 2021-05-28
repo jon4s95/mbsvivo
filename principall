@@ -32,7 +32,6 @@ a=$"IMG1"
                       esac
             *) echo -e "\e[01;33mhoje não é seu dia de sorte\e[0m"; break;;
       esac
-  sleep 1; done; echo
   while :; do
    nohup dpkg -s pv > /dev/null 2>&1
    pv2=$(echo $?)
