@@ -18,7 +18,7 @@ a=$"IMG1"
                        0) echo -e "\e[01;37;41m Agora tem o PV \e[0m"|pv -qL 18; break;;
                        1) echo -e "\e[01;37m Tente atualizar \n assim > \e[01;37;41m apt install pv \e[0m\n \e[01;37mTente também >  apt update; apt upgrade  \e[0m"; sleep 7; break;;
                        2) echo -e "\e[01;33mHoje não é seu dia de sorte\e[0m"; break;;
-                       esac;;
+                       esac;
   sleep 1; done; echo
   while :; do
    nohup dpkg -s jq > /dev/null 2>&1
